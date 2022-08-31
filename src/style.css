@@ -1,0 +1,92 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+ .gtgt-block-main-div{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    flex-wrap: wrap;
+}
+.gtgt-block-box-col {
+    padding: 0 15px !important;
+    margin-bottom: 25px !important;
+ /*   flex: 0 0 25% !important; */
+    width: 50% !important;
+}
+.gtgt-block-main-box {
+    max-width: 100%;
+    width: 100%;
+    background: #dba8e5;
+    padding: 25px;
+    transition: 0.3s all;
+    margin: 0;
+    height: 100%;
+    min-width: inherit !important;
+}
+.gtgt-block-main-box img {
+    display: block;
+    width: 100%;
+}
+.gtgt-block-main-box h2{
+    margin: 0;
+    color: #004f47;
+    position: relative;
+    padding-bottom: 20px;
+    line-height: 1.4em;
+    font-family: "Sora", Sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 600 !important;
+}
+.gtgt-block-main-box h2::after{
+    content: "";
+    position: absolute;
+    width: 91px;
+    height: 2px;
+    background-color: #26d07c;
+    bottom: 0;
+    left: 0;
+}
+.gtgt-block-main-box p {
+    padding: 0;
+    color: #1f8065;
+    font-family: "Sora", Sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    padding: 20px 0;
+    text-align: left;
+    word-break: break-all;
+}
+.gtgt-block-main-box a {
+    padding: 0 0 0 0;
+    color: #004f47;
+    text-decoration: none;
+    font-family: "Sora", Sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+@media screen and (max-width: 991px) {
+.gtgt-block-box-col {
+    width: 33.33% !important;
+    flex: 0 0 33.33% !important;
+}
+}
+
+@media screen and (max-width: 767px) {
+    .gtgt-block-box-col {
+        width: 50% !important;
+        flex: 0 0 50% !important;
+    }
+
+}
+@media screen and (max-width: 575px) {
+    .gtgt-block-box-col {
+        width: 100% !important;
+        flex: 0 0 100% !important;
+    }
+}
